@@ -26,6 +26,7 @@ export default function FormStep4({
 
   return (
     <div className="flex flex-col bg-white px-5 py-8 gap-7 w-[90%] md:w-[50%] md:static absolute top-[120px] md:mr-[70px] md:rounded-none rounded-lg">
+      
       <div className="flex flex-col gap-2">
         <h1 className="text-3xl font-bold">Finishing up</h1>
         <p className="text-gray-500 text-sm">
@@ -86,6 +87,7 @@ export default function FormStep4({
           +${value === "monthly" ? total : totalYr}/mo
         </p>
       </div>
+      
       <div className="flex flex-row justify-between w-full mt-[150px] md:mt-[30px]">
         <ButtonPrev onClick={handlePrev}>Go back</ButtonPrev>
         <button

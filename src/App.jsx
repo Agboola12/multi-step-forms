@@ -7,7 +7,7 @@ import FormStep4 from "./components/formStep4";
 import LastPage from "./components/lastPage";
 
 export default function App() {
-  
+
   const [count, setCount] = useState(1);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -80,6 +80,7 @@ export default function App() {
 
   return (
     <div className="w-full justify-center flex items-center bg-blue-50 h-screen">
+     
       <div className="w-full md:w-[60%] h-full md:h-[85%] rounded-lg md:bg-white p-0 md:p-4 flex flex-col md:flex-row items-center md:justify-between relative">
         <StepsDisplay count={count} />
 
@@ -138,6 +139,7 @@ export default function App() {
 
 function StepsDisplay({ count }) {
   return (
+    
     <div className="h-[200px] md:h-full sidebar w-full md:w-[30%] md:rounded-xl">
       <ul className="flex flex-row md:flex-col justify-center gap-7 md:ml-[30px] mt-[40px]">
         <li className=" text-white text-xs flex flex-row gap-4 items-center">
@@ -147,6 +149,7 @@ function StepsDisplay({ count }) {
           >
             1
           </p>
+
           <span className="hidden md:flex flex-col gap-1">
             <p className="text-neutral-300">STEP 1</p>
             <p className="font-bold uppercase">YOUR INFO</p>
@@ -165,6 +168,7 @@ function StepsDisplay({ count }) {
             <p className="font-bold uppercase">select plan</p>
           </span>
         </li>
+        
         <li className=" text-white text-xs flex flex-row gap-4 items-center">
           <p
             className={` ${count === 3 && "bg-blue-300 text-black border-none"}

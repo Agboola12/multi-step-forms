@@ -32,11 +32,12 @@ export default function Checked() {
 
     e.preventDefault();
     console.log(checkedItems);
-    
+
   }
   return (
     
     <form onSubmit={xxx}>
+      
       {Data.map((item) => (
         <div key={item.id}>
           <label htmlFor="">
